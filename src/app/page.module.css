@@ -1,0 +1,87 @@
+.wrapper {
+  text-align: center;
+  padding: 20px;
+}
+
+.heading {
+  font-size: 24px;
+  color: #004953;
+}
+
+.scannerContainer {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  border: 2px solid #004953;
+}
+
+.output {
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #007b6c;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.btn:hover {
+  background-color: #005a4f;
+}
+
+.scannedList {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.scannedList ul {
+  list-style: none;
+  padding: 0;
+}
+
+.scannedList li {
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+}
+
+.bottomBar {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  background: #f4f4f4;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.round {
+  text-align: center;
+  cursor: pointer;
+}
+
+.round i {
+  font-size: 20px;
+}
+
+.round p {
+  margin-top: 5px;
+}
+
+.active {
+  color: #007b6c;
+}
+
+.toast {
+  position: fixed;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #007b6c;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
