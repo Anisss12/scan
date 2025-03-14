@@ -48,21 +48,6 @@ const QRBarcodeScanner = () => {
     }
   };
 
-  const requestCameraPermission = async () => {
-    try {
-      const permission = await navigator.permissions.query({ name: "camera" });
-
-      if (permission.state === "denied") {
-        showToast("Camera access is blocked. Enable it in browser settings.");
-        return;
-      }
-
-      startScanner(); // Start scanner only if permission is granted
-    } catch (err) {
-      showToast("Failed to check permission: " + err.message);
-    }
-  };
-
   const startScanner = async () => {
     try {
       let stream = await navigator.mediaDevices.getUserMedia({
@@ -79,8 +64,6 @@ const QRBarcodeScanner = () => {
       showToast("Camera access denied: " + err.message);
     }
   };
-
-  // Call requestCameraPermission() instead of startScanner()
 
   // Call requestCameraPermission() instead of startScanner()
 
